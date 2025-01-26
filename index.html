@@ -20,6 +20,15 @@
             border-bottom: 2px solid #ddd;
         }
 
+        /* General styles for all sections */
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 800px;
+            text-align: center;
+        }
+
         /* Design 1: Modern Business */
         .design1 {
             background: linear-gradient(45deg, #2193b0, #6dd5ed);
@@ -28,11 +37,6 @@
         }
         .design1 h1 {
             font-size: 4rem;
-            margin-bottom: 20px;
-        }
-        .design1 p {
-            font-size: 1.5rem;
-            max-width: 600px;
         }
 
         /* Design 2: E-Commerce */
@@ -63,23 +67,12 @@
             max-width: 100%;
             border-radius: 12px;
         }
-        .design2 .product h3 {
-            margin: 15px 0;
-            font-size: 1.5rem;
-        }
-        .design2 .product p {
-            font-size: 1.2rem;
-        }
 
         /* Design 3: Portfolio */
         .design3 {
             background: linear-gradient(45deg, #7f00ff, #e100ff);
             color: white;
-        }
-        .design3 h2 {
-            font-size: 3rem;
             text-align: center;
-            margin-bottom: 30px;
         }
         .design3 .projects {
             display: grid;
@@ -93,23 +86,13 @@
             color: black;
             padding: 20px;
             border-radius: 12px;
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .design3 .project h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
         }
 
         /* Design 4: Blog */
         .design4 {
             background: linear-gradient(45deg, #00c6ff, #0072ff);
             color: white;
-        }
-        .design4 h2 {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 30px;
         }
         .design4 article {
             background: white;
@@ -120,24 +103,12 @@
             max-width: 800px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .design4 article h3 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        .design4 article p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
 
         /* Design 5: Creative Agency */
         .design5 {
             background: linear-gradient(45deg, #ee9ca7, #ffdde1);
             color: black;
             text-align: center;
-        }
-        .design5 h2 {
-            font-size: 3rem;
-            margin-bottom: 30px;
         }
         .design5 .team {
             display: flex;
@@ -152,92 +123,210 @@
             width: 200px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .design5 .member img {
-            border-radius: 50%;
-            max-width: 100%;
-            margin-bottom: 10px;
-        }
-        .design5 .member h4 {
-            font-size: 1.5rem;
-        }
 
-        /* Additional Designs */
+        /* Design 6: Restaurant */
         .design6 {
-            background: linear-gradient(45deg, #1f4037, #99f2c8);
+            background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
             color: black;
             text-align: center;
         }
-        .design6 h2 {
-            font-size: 3rem;
-            margin-bottom: 30px;
-        }
-        .design6 .services {
-            display: flex;
-            flex-wrap: wrap;
+        .design6 .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .design6 .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Design 7: Personal Blog */
+        .design7 {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            color: black;
+        }
+        .design7 article {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Design 8: Photography */
+        .design8 {
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+        .design8 .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .design8 .photo {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* Design 9: Event Planning */
+        .design9 {
+            background: linear-gradient(45deg, #ffecd2, #fcb69f);
+            color: black;
+            text-align: center;
+        }
+        .design9 .events {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
             justify-content: center;
         }
-        .design6 .service {
+        .design9 .event {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Design 10: Tech Startup */
+        .design10 {
+            background: linear-gradient(45deg, #8e44ad, #3498db);
+            color: white;
+            text-align: center;
+        }
+        .design10 .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .design10 .feature {
             background: white;
             color: black;
             padding: 20px;
             border-radius: 12px;
-            width: 300px;
-            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .design7 {
-            background: linear-gradient(45deg, #42275a, #734b6d);
-            color: white;
-            text-align: center;
-        }
-        .design7 h2 {
-            font-size: 3rem;
-        }
-        .design7 p {
-            font-size: 1.2rem;
-        }
-
-        .design8 {
-            background: linear-gradient(45deg, #141E30, #243B55);
-            color: white;
-            text-align: center;
-        }
-        .design8 h2 {
-            font-size: 3rem;
-        }
-        .design8 p {
-            font-size: 1.2rem;
-        }
-
-        .design9 {
-            background: linear-gradient(45deg, #7b4397, #dc2430);
-            color: white;
-            text-align: center;
-        }
-        .design9 h2 {
-            font-size: 3rem;
-        }
-        .design9 p {
-            font-size: 1.2rem;
-        }
-
-        .design10 {
-            background: linear-gradient(45deg, #f12711, #f5af19);
-            color: white;
-            text-align: center;
-        }
-        .design10 h2 {
-            font-size: 3rem;
-        }
-        .design10 p {
-            font-size: 1.2rem;
-        }
     </style>
 </head>
 <body>
+
+    <!-- Design 1: Modern Business -->
     <section class="design1">
         <h1>Welcome to Our Business</h1>
+        <p>Your success is our priority. Discover unparalleled solutions to elevate your growth.</p>
     </section>
-    <section>....50 will fill later</body>
+
+    <!-- Design 2: E-Commerce -->
+    <section class="design2">
+        <h2>Shop Our Exclusive Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design 3: Portfolio -->
+    <section class="design3">
+        <h2>Our Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project Alpha</h3>
+                <p>Innovative solutions for modern businesses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design 4: Blog -->
+    <section class="design4">
+        <h2>Latest Blog Posts</h2>
+        <article>
+            <h3>Blog Post One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+    </section>
+
+    <!-- Design 5: Creative Agency -->
+    <section class="design5">
+        <h2>Our Talented Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                <h4>John Doe</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design 6: Restaurant -->
+    <section class="design6">
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Grilled Chicken</h3>
+                <p>Succulent chicken grilled to perfection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design 7: Personal Blog -->
+    <section class="design7">
+        <h2>About Me</h2>
+        <article>
+            <p>Sharing my personal thoughts and experiences.</p>
+        </article>
+    </section>
+
+    <!-- Design 8: Photography -->
+    <section class="design8">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Gallery Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Design 9: Event Planning -->
+    <section class="design9">
+        <h2>Upcoming Events</h2>
+        <div class="events">
+            <div class="event">
+                <h3>Wedding Gala</h3>
+                <p>Celebrate love with us!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design 10: Tech Startup -->
+    <section class="design10">
+        <h2>Innovative Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>AI-Powered Tools</h3>
+                <p>Revolutionizing the way you work.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
