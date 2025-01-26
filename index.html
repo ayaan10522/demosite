@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Multi-Design Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            height: 100vh;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* Design 1: Modern Business */
+        .design1 {
+            background: linear-gradient(45deg, #2193b0, #6dd5ed);
+            color: white;
+            text-align: center;
+        }
+        .design1 h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .design1 p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+
+        /* Design 2: E-Commerce */
+        .design2 {
+            background: linear-gradient(45deg, #ffafbd, #ffc3a0);
+            color: black;
+            text-align: center;
+        }
+        .design2 h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .design2 .products {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .design2 .product {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+        .design2 .product img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+        .design2 .product h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+        .design2 .product p {
+            font-size: 1.2rem;
+        }
+
+        /* Design 3: Portfolio */
+        .design3 {
+            background: linear-gradient(45deg, #7f00ff, #e100ff);
+            color: white;
+        }
+        .design3 h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .design3 .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .design3 .project {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .design3 .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* Design 4: Blog */
+        .design4 {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+        }
+        .design4 h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .design4 article {
+            background: white;
+            color: black;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .design4 article h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .design4 article p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Design 5: Creative Agency */
+        .design5 {
+            background: linear-gradient(45deg, #ee9ca7, #ffdde1);
+            color: black;
+            text-align: center;
+        }
+        .design5 h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .design5 .team {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .design5 .member {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .design5 .member img {
+            border-radius: 50%;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        .design5 .member h4 {
+            font-size: 1.5rem;
+        }
+
+        /* Additional Designs */
+        .design6 {
+            background: linear-gradient(45deg, #1f4037, #99f2c8);
+            color: black;
+            text-align: center;
+        }
+        .design6 h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .design6 .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .design6 .service {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .design7 {
+            background: linear-gradient(45deg, #42275a, #734b6d);
+            color: white;
+            text-align: center;
+        }
+        .design7 h2 {
+            font-size: 3rem;
+        }
+        .design7 p {
+            font-size: 1.2rem;
+        }
+
+        .design8 {
+            background: linear-gradient(45deg, #141E30, #243B55);
+            color: white;
+            text-align: center;
+        }
+        .design8 h2 {
+            font-size: 3rem;
+        }
+        .design8 p {
+            font-size: 1.2rem;
+        }
+
+        .design9 {
+            background: linear-gradient(45deg, #7b4397, #dc2430);
+            color: white;
+            text-align: center;
+        }
+        .design9 h2 {
+            font-size: 3rem;
+        }
+        .design9 p {
+            font-size: 1.2rem;
+        }
+
+        .design10 {
+            background: linear-gradient(45deg, #f12711, #f5af19);
+            color: white;
+            text-align: center;
+        }
+        .design10 h2 {
+            font-size: 3rem;
+        }
+        .design10 p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="design1">
+        <h1>Welcome to Our Business</h1>
+    </section>
+    <section>....50 will fill later</body>
